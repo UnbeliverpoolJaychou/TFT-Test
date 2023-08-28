@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFT</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+      h2 {
+        text-align: left;
+        padding: 10px;
+        font-family: serif;
+        color: rgba(192, 192, 192);
+        float: left;
+        white-space: pre-wrap;
+      }
+      h3 {
+        font-family: serif;
+      }
+    </style>
+</head>
+<body onload="init()" >
+    <div class="grid" draggable=”true”>
+      <script src="./script.js"></script>
+    </div>
+
+    <div class="cardPool" >
+      <div class="desc">
+        <h3>Champions</h3>
+      </div>
+      <div class="gallery_one" id="Diana">
+        <a target="_blank">
+          <img src="Diana.png" id="Dianaimg" alt="Diana1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Elise">
+        <a target="_blank">
+          <img src="Elise.png" id="Eliseimg" alt="Elise1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Fiora">
+        <a target="_blank">
+          <img src="Fiora.png" id="Fioraimg" alt="Fiora1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Garen">
+        <a target="_blank">
+          <img src="Garen.png" id="Garenimg" alt="Garen1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Lissandra">
+        <a target="_blank" >
+          <img src="Lissandra.png" id="Lissandraimg" alt="Lissandra1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Maokai">
+        <a target="_blank">
+          <img src="Maokai.png" id="Maokaiimg" alt="Maokai1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Nami">
+        <a target="_blank">
+          <img src="Nami.png" id="Namiimg" alt="Nami1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Nidalee">
+        <a target="_blank">
+          <img src="Nidalee.png" id="Nidaleeimg" alt="Nidalee1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Tahm">
+        <a target="_blank">
+          <img src="Tahm.png" id="Tahmimg" alt="Tahm1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Twisted_Fate">
+        <a target="_blank">
+          <img src="Twisted_Fate.png" id="Twisted_Fateimg" alt="Twisted_Fate1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Vayne">
+        <a target="_blank">
+          <img src="Vayne.png" id="Vayneimg" alt="Vayne1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Wukong">
+        <a target="_blank">
+          <img src="Wukong.png" id="Wukongimg" alt="Wukong1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_one" id="Yasuo">
+        <a target="_blank">
+          <img src="Yasuo.png" id="Yasuoimg" alt="Yasuo1" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Annie">
+        <a target="_blank">
+          <img src="Annie.png" id="Annieimg" alt="Annie2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Aphelios">
+        <a target="_blank">
+          <img src="Aphelios.png" id="Apheliosimg" alt="Aphelios2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Hecarim">
+        <a target="_blank">
+          <img src="Hecarim.png" id="Hecarimimg" id="img1" alt="Hecarim2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Janna">
+        <a target="_blank">
+          <img src="Janna.png" id="Jannaimg" id="img1" alt="Janna2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Jarvan">
+        <a target="_blank">
+          <img src="Jarvan.png" id="Jarvanimg" alt="Jarvan2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Jax">
+        <a target="_blank">
+          <img src="Jax.png" id="Jaximg" alt="Jax2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Lulu">
+        <a target="_blank">
+          <img src="Lulu.png" id="Luluimg" alt="Lulu2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Pyke">
+        <a target="_blank">
+          <img src="Pyke.png" id="Pykeimg" alt="Pyke2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Sylas">
+        <a target="_blank">
+          <img src="Sylas.png" id="Sylasimg" alt="Sylas2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Teemo">
+        <a target="_blank">
+          <img src="Teemo.png" id="Teemoimg" alt="Teemo2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Thresh">
+        <a target="_blank">
+          <img src="Thresh.png" id="Threshimg" alt="Thresh2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Vi">
+        <a target="_blank">
+          <img src="Vi.png" id="Viimg" alt="Vi2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_two" id="Zed">
+        <a target="_blank">
+          <img src="Zed.png" id="Zedimg" alt="Zed2" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Akali">
+        <a target="_blank">
+          <img src="Akali.png" id="Akaliimg" alt="Akali3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Evelynn">
+        <a target="_blank">
+          <img src="Evelynn.png" id="Evelynnimg" alt="Evelynn3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Irelia">
+        <a target="_blank">
+          <img src="Irelia.png" id="Ireliaimg" alt="Irelia3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Jinx">
+        <a target="_blank">
+          <img src="Jinx.png" id="Jinximg" alt="Jinx3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Kalista">
+        <a target="_blank">
+          <img src="Kalista.png" id="Kalistaimg" alt="Kalista3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Katarina">
+        <a target="_blank">
+          <img src="Katarina.png" id="Katarinaimg" alt="Katarina3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Kennen">
+        <a target="_blank">
+          <img src="Kennen.png" id="Kennenimg" alt="Kennen3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Kindred">
+        <a target="_blank">
+          <img src="Kindred.png" id="Kindredimg" alt="Kindred3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Lux">
+        <a target="_blank">
+          <img src="Lux.png" id="Luximg" alt="Lux3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Nunu">
+        <a target="_blank">
+          <img src="Nunu.png" id="Nunuimg" alt="Nunu3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Veigar">
+        <a target="_blank">
+          <img src="Veigar.png" id="img1" alt="Veigar3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Xin_Zhao">
+        <a target="_blank">
+          <img src="Xin_Zhao.png" id="img1" alt="Xin_Zhao3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_three" id="Yuumi">
+        <a target="_blank">
+          <img src="Yuumi.png" id="img1" alt="Yuumi3" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Aatrox" >
+        <a target="_blank">
+          <img src="Aatrox.png" id="img1" alt="Aatrox4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Ahri">
+        <a target="_blank">
+          <img src="Ahri.png" id="img1" alt="Ahri4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Ashe">
+        <a target="_blank">
+          <img src="Ashe.png" id="img1" alt="Ashe4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Cassiopeia">
+        <a target="_blank">
+          <img src="Cassiopeia.png" id="img1" alt="Cassiopeia4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Jhin">
+        <a target="_blank">
+          <img src="Jhin.png" id="img1" alt="Jhin4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Morgana">
+        <a target="_blank">
+          <img src="Morgana.png" id="img1" alt="Morgana4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Riven">
+        <a target="_blank">
+          <img src="Riven.png" id="img1" alt="Riven4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Sejuani">
+        <a target="_blank">
+          <img src="Sejuani.png" id="img1" alt="Sejuani4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Shen">
+        <a target="_blank">
+          <img src="Shen.png" id="img1" alt="Shen4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Talon">
+        <a target="_blank">
+          <img src="Talon.png" id="img1" alt="Talon4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_four" id="Warwick">
+        <a target="_blank">
+          <img src="Warwick.png" id="img1" alt="Warwick4" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Azir">
+        <a target="_blank">
+          <img src="Azir.png" id="img1" alt="Azir5" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Ezreal">
+        <a target="_blank">
+          <img src="Ezreal.png" id="img1" alt="Ezreal5" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Kayn">
+        <a target="_blank">
+          <img src="Kayn.png" id="img1" alt="Kayn5" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Lee_Sin">
+        <a target="_blank">
+          <img src="Lee_Sin.png" id="img1" alt="Lee_Sin5" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Lillia">
+        <a target="_blank">
+          <img src="Lillia.png" id="img1" alt="Lillia5" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Sett">
+        <a target="_blank">
+          <img src="Sett.png" id="img1" alt="Sett5" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Yone">
+        <a target="_blank">
+          <img src="Yone.png" id="img1" alt="Yone5" width="600" height="400">
+        </a>
+      </div>
+      <div class="gallery_five" id="Zilean">
+        <a target="_blank">
+          <img src="Zilean.png" id="img1" alt="Zilean5" width="600" height="400">
+        </a>
+      </div>
+    </div>
+    
+    <div class="incomeEarned">
+      <h3>Cost
+        <img src="coin.png" alt="coin" width="20" height="20">
+      </h3>
+      <h3 id="cash">
+      </h3>
+    </div>
+
+    <div class="traits">
+      <h2 id="trait"></h2>
+    </div>
+
+    <button id="myButton" onclick = TeamBuildOne()><h3>Recommend Team Build</h3></button>
+
+    <div class="tierLists">
+      <h2 id="champ" height="50" width="100"></h2> 
+    </div>
+  </body>
+</html>
